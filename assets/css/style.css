@@ -1,0 +1,102 @@
+.img {
+    width: 100%;
+    background-image: url('https://img.freepik.com/free-vector/cinema-film-strips-blue-background_1017-23456.jpg?w=1380&t=st=1683689710~exp=1683690310~hmac=f1371fa4e3b4c6d5e1bf783b8ffcb0f0cd038e7c963f3f3d000a360a16df42cc');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header .row.bg-primary.text-white.py-4 {
+    line-height: 3.5;
+}
+
+.dropBg {
+    height: 105vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.dropForm {
+    position: fixed;
+    top: 25vh;
+    left: 25%;
+    width: 50%;
+    z-index: 1;
+    display: none;
+
+}
+
+.fa-times {
+    cursor: pointer;
+}
+
+.dropForm.visible {
+    display: block;
+    animation: move-drop-form 0.5s ease-in-out;
+}
+
+.dropBg.visible {
+    display: block;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.img{
+    height : 200px;
+    width : 100%;
+    object-fit: cover;
+}
+
+@keyframes move-drop-form {
+    from {
+        margin-top: -10%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+
+@media all and (min-width:768px) and (max-width:992px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+}
+
+@media all and (max-width : 768px) {
+    button.btn.btn-primary.font-weight-bold {
+        width: 100%;
+    }
+
+    .mb-10 {
+        margin-bottom: 0.5rem;
+    }
+
+    .header .text-right {
+        text-align: left !important;
+    }
+
+    .dropForm {
+        position: fixed;
+        top: 10vh;
+        left: 10%;
+        width: 80%;
+    }
+
+    .mb-20 {
+        margin-bottom: 0rem;
+    }
+}
